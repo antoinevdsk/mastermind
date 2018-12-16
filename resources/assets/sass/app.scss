@@ -1,0 +1,84 @@
+@import '~bootstrap/scss/bootstrap';
+
+.game{
+    background-color: #333;
+    width: 500px;
+    height: 600px;
+}
+.line{
+    height: 40px;
+    position: relative;
+    background: #333;
+}
+.picker{
+    margin-top: 10px;
+    background: #666;
+    padding: 20px;
+}
+.corrections {
+    position: absolute;
+    left: 164px;
+    top:6px;
+    width: 40px;
+    .correction {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin: 2px;
+        display: block;
+        float: left;
+        &.red {
+            background: red;
+        }
+        &.white {
+            background: white;
+        }
+    }
+}
+.pawn.back{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 5px;
+    background: #666;
+    position: absolute;
+    box-shadow: inset 1px 1px 3px #000;
+    left:0;
+}
+.pawn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 5px;
+    display: block;
+    float:left;
+    z-index: 2;
+    box-shadow: inset 0px 0px 5px #333;
+    span{
+        display: none;
+    }
+    &.red{
+        background:red;
+    }
+    &.blue{
+        background: #169eff;
+    }
+    &.yellow{
+        background:yellow;
+    }
+    &.orange{
+        background: #ff8106;
+    }
+    &.purple{
+        background: #9c08bc;
+    }
+    &.white{
+        background:white;
+    }
+    &.pink{
+        background: #ff7eea;
+    }
+    &.green{
+        background: #2e8544;
+    }
+}
